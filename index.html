@@ -23,11 +23,16 @@
           </li>
           <li class="nav-list"><a class="nav-link" href="#">Projects</a></li>
           <li class="nav-list"><a class="nav-link" href="#">Resume</a></li>
-          <li class="nav-list"><a class="nav-link" href="#">Contact Me</a></li>
+          <li class="nav-list">
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
         </ul>
       </nav>
       <div class="bootstrap-grid">
-        <div class="row" id="top"></div>
+        <div class="row" id="top">
+          <h1 id="about-header">Hi, my name is Nora.</h1>
+          <h2 id="about-secondary-header">(she/they)</h2>
+        </div>
         <div class="row section1" id="about-me">
           <div
             class="col-md-6 col-lg-7 d-flex align-self-center justify-self-center"
@@ -40,21 +45,68 @@
             />
           </div>
           <div class="col-md-6 col-lg-5 d-flex align-self-center" id="about">
-            <p class="about-me">
-              Nora is a first-year graduate student pursuing a Master's Degree
-              in Computer Science at Portland State University. They are
-              interested in multiple tracks including Languages and Programming,
-              Software Engineering, Artificial Intelligence, and Security. They
-              utilize their background in social work and foreign language to
-              build accessible technology aimed at being equitable and
-              inclusive. Nora's personal projects include an herbal medicine
-              dictionary and a website for their leather-working business. Nora
-              is interested in projects made for queer people and people with
-              disabilities, digital spaces that create culture and/or community
-              building, music design and synthesis, and the intersection of
-              nature and technology.
+            <p class="about-me mt-4">
+              I am a first-year graduate student pursuing a Master's Degree in
+              Computer Science at Portland State University. I am interested in
+              multiple tracks including Languages and Programming, Software
+              Engineering, Artificial Intelligence, and Security. I utilize
+              their background in social work and foreign language to build
+              accessible technology aimed at being equitable and inclusive. My
+              personal projects include an herbal medicine dictionary and a
+              website for my leather-working business. I am interested in
+              projects made for queer people and people with disabilities,
+              digital spaces that create culture and/or community building,
+              music design and synthesis, and the intersection of nature and
+              technology.
             </p>
           </div>
+        </div>
+        <div class="row section2" id="projects"></div>
+        <div class="row section3" id="resume"></div>
+        <div class="row section4" id="contact">
+          <form action="contact">
+            <h1 id="contact-header">Contact Me</h1>
+            <div class="mb-3" id="name">
+              <label for="name" class="form-label">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Your Name"
+              />
+            </div>
+            <div class="mb-3" id="email">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="you@hello.com"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="form-label">Your Message:</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="6"
+                placeholder="Say hello!"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn" id="submit" value="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="section5">
+          <ul>
+            <li class="nav-list"><a class="nav-link" href="#">LinkedIn</a></li>
+            <li class="nav-list">
+              <a class="nav-link" href="#">GitHub</a>
+            </li>
+            <li class="nav-list"><a class="nav-link" href="#">Flickr</a></li>
+            <li class="nav-list"><a class="nav-link" href="#">xray.fm</a></li>
+          </ul>
         </div>
       </div>
     </div>

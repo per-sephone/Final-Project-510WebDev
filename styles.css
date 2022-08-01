@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Romance Logic';
-  src: url(RomanceLogic.ttf) format('truetype');
+  src: url(fonts/RomanceLogic.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Notulen';
-  src: url(notulenserif.otf) format('truetype');
+  src: url(fonts/notulenserif.otf) format('truetype');
 }
 
 body {
@@ -13,9 +13,16 @@ body {
   color: white;
 }
 
+h1 {
+  font-family: Romance Logic;
+}
+h2 {
+  font-family: Romance Logic;
+}
+
 nav {
   position: fixed;
-  background-color: rgb(92, 90, 90);
+  background-color: rgb(70, 70, 70);
   width: 100%;
   top: 0px;
   left: 0px;
@@ -52,6 +59,18 @@ nav ul {
   margin-top: 200px;
 }
 
+#about-header {
+  text-align: end;
+  padding-right: 100px;
+  font-size: 60px;
+}
+
+#about-secondary-header {
+  text-align: end;
+  padding-right: 100px;
+  font-size: 40px;
+}
+
 .section1 {
   margin: 20px;
 }
@@ -67,8 +86,24 @@ img {
   display: inline-block;
 }
 
+#contact-header {
+  font-size: 60px;
+}
+
+.section4 {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  border-style: double;
+  padding: 15px;
+  background-color: rgb(70, 70, 70);
+}
+
+.btn {
+  background-color: white;
+  color: black;
+}
 @media (min-width: 767px) {
-  img {
-    padding-bottom: 30px;
-  }
+
 }
