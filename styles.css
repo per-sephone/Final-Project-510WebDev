@@ -8,13 +8,28 @@
   src: url(fonts/notulenserif.otf) format('truetype');
 }
 
+@font-face {
+  font-family: 'Forzan';
+  src: url(fonts/ForzanLight-ALWAA.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Glorify';
+  src: url(fonts/Glorifydemo-BW3J3.otf) format('truetype');
+}
+
 body {
   background-color: black;
   color: white;
+  letter-spacing: 0.5px;
+  font-family: Glorify;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 h1 {
   font-family: Romance Logic;
+  font-weight: bold;
 }
 h2 {
   font-family: Romance Logic;
@@ -56,13 +71,13 @@ nav ul {
 }
 
 #top {
-  margin-top: 200px;
+  margin-top: 250px;
 }
 
 #about-header {
   text-align: end;
   padding-right: 100px;
-  font-size: 60px;
+  font-size: 70px;
 }
 
 #about-secondary-header {
@@ -104,6 +119,58 @@ img {
   background-color: white;
   color: black;
 }
-@media (min-width: 767px) {
 
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.list {
+  display: inline-block;
+}
+
+.link {
+  padding: 20px;
+  margin: 0px;
+  text-decoration: none;
+  color: white;
+  font-family: Notulen;
+  font-size: 2em;
+}
+
+.link:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 566px) {
+  #top {
+    margin-top: 250px;
+  }
+
+  .nav-link {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 477px) {
+  #top {
+    margin-top: 250px;
+  }
+
+  .nav-link {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 429px) {
+  #top {
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 282px) {
+  #top {
+    margin-top: 450px;
+  }
 }
