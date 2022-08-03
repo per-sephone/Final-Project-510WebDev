@@ -63,7 +63,7 @@ nav ul {
   text-decoration: none;
   color: white;
   font-family: Notulen;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 .nav-link:hover {
   background-color: rgb(223, 223, 223);
@@ -71,34 +71,67 @@ nav ul {
 }
 
 #top {
-  margin-top: 250px;
+  margin-top: 300px;
 }
 
 #about-header {
-  text-align: end;
-  padding-right: 100px;
+  text-align: center;
+
   font-size: 70px;
 }
 
 #about-secondary-header {
-  text-align: end;
-  padding-right: 100px;
+  text-align: center;
+
   font-size: 40px;
 }
 
 .section1 {
-  margin: 20px;
+  padding: 10px;
 }
+
 img {
   max-width: 100%;
+  margin: 0 auto;
 }
 
-/* #about {
-  background-color: rgb(92, 90, 90);
-} */
+#about {
+  text-align: center;
+}
 
-.about-me {
-  display: inline-block;
+.section2 {
+  padding: 10px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+li {
+  list-style-type: none;
+}
+
+#project-item3 {
+  padding-bottom: 30px;
+}
+
+.section3 {
+  padding: 10px;
+  margin-top: 100px;
+}
+
+#education {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.projects {
+  padding-top: 40px;
+}
+
+#list-item1 {
+  padding-bottom: 20px;
+}
+#list-item2 {
+  padding-bottom: 30px;
 }
 
 #contact-header {
@@ -107,8 +140,8 @@ img {
 
 .section4 {
   max-width: 400px;
-  margin: auto;
-  margin-top: 60px;
+  margin: 0 auto;
+  margin-top: 100px;
   margin-bottom: 60px;
   border-style: double;
   padding: 15px;
@@ -125,13 +158,16 @@ img {
   color: white;
 }
 
+ul {
+  padding-left: 0;
+}
+
 .list {
   display: inline-block;
 }
 
 .link {
   padding: 20px;
-  margin: 0px;
   text-decoration: none;
   color: white;
   font-family: Notulen;
@@ -143,34 +179,84 @@ img {
   color: black;
 }
 
-@media (max-width: 566px) {
+.find-me {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.section5 {
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
   #top {
-    margin-top: 250px;
+    margin-top: 200px;
   }
 
   .nav-link {
-    font-size: 35px;
-  }
-}
-
-@media (max-width: 477px) {
-  #top {
-    margin-top: 250px;
+    font-size: 2em;
   }
 
-  .nav-link {
-    font-size: 30px;
+  #about-header {
+    text-align: end;
+    padding-right: 100px;
+    font-size: 70px;
   }
-}
 
-@media (max-width: 429px) {
-  #top {
-    margin-top: 300px;
+  #about-secondary-header {
+    text-align: end;
+    padding-right: 100px;
+    font-size: 40px;
   }
-}
 
-@media (max-width: 282px) {
-  #top {
-    margin-top: 450px;
+  .section1 {
+    padding: 50px;
+  }
+
+  .image-me {
+    display: flex;
+    align-items: center;
+  }
+
+  #about {
+    display: flex;
+    text-align: end;
+    align-items: center;
+  }
+
+  .section2 {
+    text-align: start;
+    padding: 50px;
+    display: flex;
+  }
+  .section2 #sky {
+    display: flex;
+    align-items: center;
+    order: 2;
+  }
+  .section2 #project-text {
+    order: 1;
+    align-items: center;
+  }
+
+  .section3 {
+    padding: 50px;
+  }
+
+  .section3 #tree {
+    display: flex;
+    align-items: center;
+  }
+
+  #education {
+    text-align: end;
+  }
+
+  .find-me {
+    text-align: left;
+    padding-left: 120px;
+  }
+  .section5 {
+    text-align: left;
   }
 }

@@ -26,29 +26,34 @@
           <li class="nav-list">
             <a class="nav-link" href="#top">About Me</a>
           </li>
-          <li class="nav-list"><a class="nav-link" href="#">Projects</a></li>
-          <li class="nav-list"><a class="nav-link" href="#">Resume</a></li>
+          <li class="nav-list">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-list">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
           <li class="nav-list">
             <a class="nav-link" href="#contact">Contact Me</a>
           </li>
         </ul>
       </nav>
-      <div class="bootstrap-grid">
-        <div class="row" id="top">
+      <div class="bootstrap-grid grid-container">
+        <div class="row grid1" id="top">
           <h1 id="about-header">Hi, my name is Nora.</h1>
           <h2 id="about-secondary-header">(she/they)</h2>
         </div>
-        <div class="row section1 d-flex align-self-center" id="about-me">
-          <div class="col-xl-6 ps-5 pe-4">
+        <div class="row section1" id="about-me">
+          <div class="col-xl-6 image-me">
             <img
               src="images/self.JPG"
-              width="800px"
+              width="1200px"
               class="about-me"
+              id="me"
               alt="a smiling white person with curly lavendar hair, in the background is pink dogwood trees"
             />
           </div>
-          <div class="col-xl-6 d-flex align-self-center" id="about">
-            <p class="about-me mt-4 ps-5 pe-4">
+          <div class="col-xl-6" id="about">
+            <p class="about-me mt-4 ps-4 pe-4">
               I am a first-year graduate student pursuing a Master's Degree in
               Computer Science at Portland State University. I am interested in
               multiple tracks including Languages and Programming, Software
@@ -64,9 +69,92 @@
             </p>
           </div>
         </div>
-        <div class="row section2" id="projects"></div>
-        <div class="row section3" id="resume"></div>
-        <div class="row section4" id="contact">
+        <div class="row section2 grid5" id="projects">
+          <div class="col-xl-6 grid4" id="sky">
+            <img
+              src="images/sky.jpg"
+              width="1200"
+              class="projects"
+              alt="reflection of the sky in the water, a person is mid-jump"
+            />
+          </div>
+          <div class="col-xl-6 projects ps-4" id="project-text">
+            <h1>Projects</h1>
+
+            <ul id="project-list">
+              <li id="project-item1">
+                Herbal Medicine Dictionary (C++)
+                <ul>
+                  <li>
+                    Keeps a list of medicinal plants, their dosage, uses,
+                    preparations, and contraindications.
+                  </li>
+                </ul>
+              </li>
+              <li id="project-item2">
+                Gradebook (Python)
+                <ul>
+                  <li>
+                    Keeps track of student's weighted grades for individual
+                    assignments and calculates final grades.
+                  </li>
+                </ul>
+              </li>
+              <li id="project-item3">
+                Reservation Tracker (C++)
+                <ul>
+                  <li>
+                    Keeps track of user's reservations for hotel, car rental,
+                    and airline.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <h1>Languages</h1>
+            <ul>
+              <li>C/C++</li>
+              <li>Python</li>
+              <li>Java</li>
+              <li>HTML/CSS/Javascript</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row section3 grid6" id="resume">
+          <div class="col-xl-6" id="tree">
+            <img
+              src="images/dew.jpg"
+              width="1200"
+              class="resume"
+              alt="a spiderweb in tree branches with morning dew hanging from both"
+            />
+          </div>
+          <div class="col-xl-6 grid7 pe-4" id="education">
+            <h1>Education</h1>
+            <ul>
+              <li id="list-item1">
+                Portland State University
+                <ul>
+                  <li>Master of Science, Computer Science</li>
+                </ul>
+              </li>
+              <li id="list-item2">
+                Portland State University
+                <ul>
+                  <li>Bachelor of Arts, Spanish Language</li>
+                  <li>Graduated Magna Cum Laude</li>
+                </ul>
+              </li>
+            </ul>
+            <h1>Courses I Enjoyed</h1>
+            <ul>
+              <li>Cultural Competency in Computing</li>
+              <li>Data Structures</li>
+              <li>Calculus</li>
+              <li>Web Development</li>
+            </ul>
+          </div>
+        </div>
+        <div class="row section4 grid8" id="contact">
           <form
             class="contact"
             action="https://formsubmit.co/noralorene@gmail.com"
@@ -105,7 +193,7 @@
             </div>
             <button
               type="submit"
-              class="btn btn-dark"
+              class="btn btn-dark btn-lg"
               id="submit"
               value="submit"
             >
@@ -115,7 +203,7 @@
         </div>
         <div class="section5">
           <ul>
-            Find Me On:
+            <div class="find-me grid9">Find Me On:</div>
             <li class="list">
               <a
                 class="link"
