@@ -105,6 +105,18 @@ img {
   margin-top: 100px;
 }
 
+.section2 a {
+  /* text-decoration: none; */
+  /* background-color: rgb(70, 70, 70); */
+  color: white;
+  padding: 5px;
+}
+
+.section2 a:hover {
+  background-color: rgb(223, 223, 223);
+  color: black;
+}
+
 li {
   list-style-type: none;
 }
@@ -175,7 +187,7 @@ ul {
 }
 
 .link:hover {
-  background-color: white;
+  background-color: rgb(223, 223, 223);
   color: black;
 }
 
@@ -186,6 +198,10 @@ ul {
 
 .section5 {
   text-align: center;
+}
+
+.light-theme {
+  padding-bottom: 30px;
 }
 
 @media (min-width: 1200px) {
@@ -258,5 +274,11 @@ ul {
   }
   .section5 {
     text-align: left;
+    margin-left: 20px;
+  }
+
+  .light-theme {
+    text-align: end;
+    padding-right: 30px;
   }
 }
