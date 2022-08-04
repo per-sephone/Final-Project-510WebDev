@@ -38,16 +38,16 @@
         </ul>
       </nav>
       <div class="bootstrap-grid grid-container">
-        <div class="row grid1" id="top">
+        <div class="row" id="top">
           <h1 id="about-header">Hi, my name is Nora.</h1>
           <h2 id="about-secondary-header">(she/they)</h2>
         </div>
         <div class="row section1" id="about-me">
-          <div class="col-xl-6 image-me">
+          <div class="col-xl-6 d-flex justify-items-center">
             <img
               src="images/self.JPG"
-              width="1200px"
-              class="about-me"
+              width="1000px"
+              class="about-me d-flex align-self-center justify-self-center"
               id="me"
               alt="a smiling white person with curly lavendar hair, in the background is pink dogwood trees"
             />
@@ -69,13 +69,14 @@
             </p>
           </div>
         </div>
-        <div class="row section2 grid5" id="projects">
-          <div class="col-xl-6 grid4" id="sky">
+        <div class="row section2" id="projects">
+          <div class="col-xl-6" id="img-div-2">
             <img
-              src="images/sky.jpg"
-              width="1200"
-              class="projects"
-              alt="reflection of the sky in the water, a person is mid-jump"
+              src="images/bugs.jpg"
+              width="1000"
+              id="bugs"
+              class="projects d-flex align-self-center justify-self-center"
+              alt="framed science project of pinned winged bugs"
             />
           </div>
           <div class="col-xl-6 projects ps-4" id="project-text">
@@ -135,13 +136,13 @@
             </ul>
           </div>
         </div>
-        <div class="row section3 grid6" id="resume">
-          <div class="col-xl-6" id="tree">
+        <div class="row section3" id="resume">
+          <div class="col-xl-6 d-flex justify-items-center" id="sky">
             <img
-              src="images/dew.jpg"
-              width="1200"
-              class="resume"
-              alt="a spiderweb in tree branches with morning dew hanging from both"
+              src="images/sky.jpg"
+              width="1000"
+              class="resume d-flex align-self-center justify-self-center"
+              alt="reflection of the sky in the water, a person is mid-jump"
             />
           </div>
           <div class="col-xl-6 grid7 pe-4" id="education">
@@ -218,34 +219,36 @@
             </button>
           </form>
         </div>
-        <div class="section5">
-          <ul>
-            <div class="find-me grid9">Find Me On:</div>
-            <li class="list">
-              <a
-                class="link"
-                href="https://www.linkedin.com/in/nora-luna-16832a176"
-                ><i class="bi bi-linkedin"></i
-              ></a>
-            </li>
-            <li class="list">
-              <a class="link" href="https://github.com/per-sephone"
-                ><i class="bi bi-github"></i
-              ></a>
-            </li>
-            <li class="list">
-              <a class="link" href="https://www.flickr.com/photos/norayo"
-                ><i class="bi bi-camera-fill"></i
-              ></a>
-            </li>
-            <li class="list">
-              <a class="link" href="https://xray.fm/shows/lucid-dream"
-                ><i class="bi bi-broadcast-pin"></i
-              ></a>
-            </li>
-          </ul>
+        <div class="section5 row">
+          <div class="col-xl-6">
+            <ul>
+              <div class="find-me">Find Me On:</div>
+              <li class="list">
+                <a
+                  class="link"
+                  href="https://www.linkedin.com/in/nora-luna-16832a176"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </li>
+              <li class="list">
+                <a class="link" href="https://github.com/per-sephone"
+                  ><i class="bi bi-github"></i
+                ></a>
+              </li>
+              <li class="list">
+                <a class="link" href="https://www.flickr.com/photos/norayo"
+                  ><i class="bi bi-camera-fill"></i
+                ></a>
+              </li>
+              <li class="list">
+                <a class="link" href="https://xray.fm/shows/lucid-dream"
+                  ><i class="bi bi-broadcast-pin"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
 
-          <div class="light-theme">
+          <div class="light-theme col-xl-6">
             <button class="btn-lg" id="light">Light Theme</button>
           </div>
         </div>

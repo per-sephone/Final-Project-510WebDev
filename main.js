@@ -77,24 +77,3 @@ function handleClick(event) {
     light.style.color = '';
   }
 }
-
-// window.addEventListener('keyup', (event) => {
-//   if (event.key == 'l') {
-//     document.body.style.background = '';
-//     document.body.style.color = '';
-//     for (let i = 0; i < socialsLink.length; i++) {
-//       socialsLink[i].style.backgroundColor = '';
-//       socialsLink[i].style.color = '';
-//     }
-//     for (let i = 0; i < projectLink.length; i++) {
-//       projectLink[i].style.backgroundColor = '';
-//       projectLink[i].style.color = '';
-//     }
-//     for (let i = 0; i < navLink.length; i++) {
-//       navLink[i].style.backgroundColor = '';
-//       navLink[i].style.color = '';
-//     }
-//     section4.style.backgroundColor = '';
-//     nav.style.backgroundColor = '';
-//   }
-// });
