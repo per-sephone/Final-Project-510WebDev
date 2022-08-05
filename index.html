@@ -17,6 +17,15 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
     <script defer src="main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init('Wpl2CfxqZmCjozNrm');
+      })();
+    </script>
   </head>
   <body>
     <div>
@@ -54,18 +63,18 @@
           </div>
           <div class="col-xl-6" id="about">
             <p class="about-me mt-4 ps-4 pe-4">
-              I am a first-year graduate student and creative pursuing a
-              Master's Degree in Computer Science at Portland State University.
-              I am interested in multiple tracks including Languages and
-              Programming, Software Engineering, Artificial Intelligence, and
-              Security. I utilize my background in social work and foreign
-              language to build accessible technology aimed at being equitable
-              and inclusive. My personal projects include an herbal medicine
-              dictionary and this website. I have several other projects that
-              are linked below. I am interested in projects made for queer
-              people and people with disabilities, digital spaces that create
-              culture and/or community building, music design and synthesis, and
-              the intersection of nature, art, and technology.
+              I am a first-year graduate student and artist pursuing a Master's
+              Degree in Computer Science at Portland State University. I am
+              interested in multiple tracks including Languages and Programming,
+              Software Engineering, Artificial Intelligence, and Security. I
+              utilize my background in social work and foreign language to build
+              accessible technology aimed at being equitable and inclusive. My
+              personal projects include an herbal medicine dictionary and this
+              website. I have several other projects that are linked below. I am
+              interested in projects made for queer people and people with
+              disabilities, digital spaces that create culture and/or community
+              building, music design and synthesis, and the intersection of
+              nature, art, and technology.
             </p>
           </div>
         </div>
@@ -145,7 +154,7 @@
               alt="reflection of the sky in the water, a person is mid-jump"
             />
           </div>
-          <div class="col-xl-6 grid7 pe-4" id="education">
+          <div class="col-xl-6 pe-4" id="education">
             <h1>Education</h1>
             <ul>
               <li id="list-item1">
@@ -172,14 +181,10 @@
             </ul>
           </div>
         </div>
-        <div class="row section4 grid8" id="contact">
-          <form
-            class="contact"
-            action="https://formsubmit.co/noralorene@gmail.com"
-            method="POST"
-          >
+        <div class="row section4" id="contact">
+          <form>
             <h1 id="contact-header">Contact Me</h1>
-            <div class="mb-3" id="name">
+            <div class="mb-3">
               <label for="name" class="form-label">Name:</label>
               <input
                 type="text"
@@ -189,7 +194,7 @@
                 placeholder="Your Name"
               />
             </div>
-            <div class="mb-3" id="email">
+            <div class="mb-3">
               <label for="email" class="form-label">Email:</label>
               <input
                 type="email"

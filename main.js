@@ -6,9 +6,6 @@ let navLink = document.querySelectorAll('.nav-link');
 let section4 = document.querySelector('.section4');
 let light = document.querySelector('#light');
 
-form.addEventListener('submit', handleSubmit);
-light.addEventListener('click', handleClick);
-
 function handleSubmit(event) {
   event.preventDefault();
 
@@ -28,13 +25,30 @@ function handleSubmit(event) {
   else if (form.elements.message.value === '') {
     alert('A message is required for this form!');
   }
-  //form filled out
+  //form filled out (name not required)
   else {
     //send it to email???
+    var parameters = {
+      from_name: form.elements.name.value,
+      email_id: form.elements.email.value,
+      message: form.elements.message.value,
+    };
+    emailjs.send('service_afc06c4', 'template_3c3mvbx', parameters).then(
+      function (response) {
+        console.log('success', response.status, response.text);
+      },
+      function (error) {
+        console.log('failed', error);
+      }
+    );
+    form.elements.name.value = '';
+    form.elements.email.value = '';
+    form.elements.message.value = '';
   }
 }
 
 function handleClick(event) {
+  //changes dark theme to light theme
   if (light.innerHTML === 'Light Theme') {
     document.body.style.background = 'white';
     document.body.style.color = 'black';
@@ -43,7 +57,6 @@ function handleClick(event) {
       socialsLink[i].style.color = 'black';
     }
     for (let i = 0; i < projectLink.length; i++) {
-      // projectLink[i].style.backgroundColor = 'rgb(223, 223, 223)';
       projectLink[i].style.color = 'black';
     }
     for (let i = 0; i < navLink.length; i++) {
@@ -55,6 +68,7 @@ function handleClick(event) {
     light.innerHTML = 'Dark Theme';
     light.style.backgroundColor = 'black';
     light.style.color = 'white';
+    //changes light theme to dark theme
   } else {
     document.body.style.background = '';
     document.body.style.color = '';
@@ -77,3 +91,7 @@ function handleClick(event) {
     light.style.color = '';
   }
 }
+//form event listener
+form.addEventListener('submit', handleSubmit);
+//color theme button event listener
+light.addEventListener('click', handleClick);
