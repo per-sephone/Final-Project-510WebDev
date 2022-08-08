@@ -36,7 +36,8 @@ h2 {
 }
 
 img {
-  border-radius: 20%;
+  border-radius: 100px;
+  border-style: double;
 }
 
 nav {
@@ -137,7 +138,7 @@ li {
   text-align: center;
 }
 
-.projects {
+#project-text {
   padding-top: 40px;
 }
 
@@ -158,7 +159,7 @@ li {
   margin-top: 100px;
   margin-bottom: 60px;
   border-style: double;
-  border-radius: 6%;
+  border-radius: 20px;
   padding: 15px;
   background-color: rgb(70, 70, 70);
 }
@@ -281,6 +282,7 @@ ul {
     text-align: start;
     padding: 50px;
     display: flex;
+    padding-top: 75px;
   }
   .section2 #bugs {
     display: flex;
@@ -304,6 +306,7 @@ ul {
 
   .section3 {
     padding: 50px;
+    padding-top: 75px;
   }
 
   #education {
