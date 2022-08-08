@@ -110,8 +110,6 @@ img {
 }
 
 .section2 a {
-  /* text-decoration: none; */
-  /* background-color: rgb(70, 70, 70); */
   color: white;
   padding: 5px;
 }
@@ -321,8 +319,6 @@ ul {
     padding-left: 120px;
   }
   .section5 {
-    /* display: flex; */
-
     text-align: left;
     margin-left: 20px;
   }
