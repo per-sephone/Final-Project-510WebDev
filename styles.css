@@ -33,6 +33,8 @@ h1 {
 }
 h2 {
   font-family: Romance Logic;
+  font-weight: bold;
+  font-size: 40px;
 }
 
 img {
@@ -79,13 +81,13 @@ nav ul {
   margin-top: 100px;
 }
 
-#about-header {
+#top-header {
   text-align: center;
   font-size: 50px;
   padding: 0 20px;
 }
 
-#about-secondary-header {
+#top-secondary-header {
   text-align: center;
 
   font-size: 40px;
@@ -100,7 +102,7 @@ img {
   margin: 0 auto;
 }
 
-#about {
+#section1-div {
   text-align: center;
 }
 
@@ -124,7 +126,7 @@ li {
   list-style-type: none;
 }
 
-#project-item3 {
+#section2-item3 {
   padding-bottom: 30px;
 }
 
@@ -133,23 +135,23 @@ li {
   margin-top: 10px;
 }
 
-#education {
+#section3-div {
   padding-top: 50px;
   text-align: center;
 }
 
-#project-text {
+#section2-div {
   padding-top: 40px;
 }
 
 #list-item1 {
   padding-bottom: 20px;
 }
-#list-item2 {
+#section3-item2 {
   padding-bottom: 30px;
 }
 
-#contact-header {
+#section4-header {
   font-size: 35px;
 }
 
@@ -178,7 +180,7 @@ ul {
   padding-left: 0;
 }
 
-.list {
+.section5-list {
   display: inline-block;
 }
 
@@ -195,7 +197,7 @@ ul {
   color: black;
 }
 
-.find-me {
+.section5-div {
   text-align: center;
   padding-bottom: 20px;
 }
@@ -204,7 +206,7 @@ ul {
   text-align: center;
 }
 
-.light-theme {
+.color-theme {
   padding-bottom: 30px;
 }
 
@@ -217,11 +219,11 @@ ul {
     margin-top: 150px;
   }
 
-  #about-header {
+  #top-header {
     font-size: 60px;
   }
 
-  #contact-header {
+  #section4-header {
     font-size: 50px;
   }
 }
@@ -234,11 +236,11 @@ ul {
     margin-top: 100px;
   }
 
-  #about-header {
+  #top-header {
     font-size: 60px;
   }
 
-  #contact-header {
+  #section4-header {
     font-size: 50px;
   }
 }
@@ -256,13 +258,13 @@ ul {
     font-size: 2em;
   }
 
-  #about-header {
+  #top-header {
     text-align: end;
     padding-right: 100px;
     font-size: 70px;
   }
 
-  #about-secondary-header {
+  #top-secondary-header {
     text-align: end;
     padding-right: 100px;
     font-size: 40px;
@@ -272,7 +274,7 @@ ul {
     padding: 50px;
   }
 
-  #about {
+  #section1-div {
     display: flex;
     text-align: end;
     align-items: center;
@@ -284,7 +286,7 @@ ul {
     display: flex;
     padding-top: 75px;
   }
-  .section2 #bugs {
+  .section2 #section2-img {
     display: flex;
     align-items: center;
     order: 2;
@@ -300,7 +302,7 @@ ul {
     padding-top: 0;
   }
 
-  #bugs {
+  #section2-img {
     padding-top: 0;
   }
 
@@ -309,15 +311,15 @@ ul {
     padding-top: 75px;
   }
 
-  #education {
+  #section3-div {
     text-align: end;
   }
 
-  #contact-header {
+  #section4-header {
     font-size: 60px;
   }
 
-  .find-me {
+  .section5-div {
     text-align: left;
     padding-left: 120px;
   }
@@ -326,7 +328,7 @@ ul {
     margin-left: 20px;
   }
 
-  .light-theme {
+  .color-theme {
     display: flex;
     justify-content: end;
     align-items: flex-end;
@@ -334,7 +336,7 @@ ul {
     padding-right: 30px;
   }
 
-  #light {
+  #color {
     margin-bottom: 0;
   }
 }

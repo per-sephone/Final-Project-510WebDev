@@ -4,7 +4,7 @@ let nav = document.querySelector('nav');
 let projectLink = document.querySelectorAll('.project-link');
 let navLink = document.querySelectorAll('.nav-link');
 let section4 = document.querySelector('.section4');
-let light = document.querySelector('#light');
+let color = document.querySelector('#color');
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -49,7 +49,7 @@ function handleSubmit(event) {
 
 function handleClick(event) {
   //changes dark theme to light theme
-  if (light.innerHTML === 'Light Theme') {
+  if (color.innerHTML === 'Light Theme') {
     document.body.style.background = 'white';
     document.body.style.color = 'black';
     for (let i = 0; i < socialsLink.length; i++) {
@@ -65,9 +65,9 @@ function handleClick(event) {
     }
     section4.style.backgroundColor = 'rgb(223, 223, 223)';
     nav.style.backgroundColor = 'rgb(223, 223, 223)';
-    light.innerHTML = 'Dark Theme';
-    light.style.backgroundColor = 'black';
-    light.style.color = 'white';
+    color.innerHTML = 'Dark Theme';
+    color.style.backgroundColor = 'black';
+    color.style.color = 'white';
     //changes light theme to dark theme
   } else {
     document.body.style.background = '';
@@ -86,12 +86,12 @@ function handleClick(event) {
     }
     section4.style.backgroundColor = '';
     nav.style.backgroundColor = '';
-    light.innerHTML = 'Light Theme';
-    light.style.backgroundColor = '';
-    light.style.color = '';
+    color.innerHTML = 'Light Theme';
+    color.style.backgroundColor = '';
+    color.style.color = '';
   }
 }
 //form event listener
 form.addEventListener('submit', handleSubmit);
 //color theme button event listener
-light.addEventListener('click', handleClick);
+color.addEventListener('click', handleClick);

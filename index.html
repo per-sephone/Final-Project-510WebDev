@@ -48,21 +48,21 @@
       </nav>
       <div class="bootstrap-grid grid-container">
         <div class="row" id="top">
-          <h1 id="about-header">Hi, my name is Nora.</h1>
-          <h2 id="about-secondary-header">(she/they)</h2>
+          <h1 id="top-header">Hi, my name is Nora.</h1>
+          <h2 id="top-secondary-header">(she/they)</h2>
         </div>
-        <div class="row section1" id="about-me">
+        <div class="row section1">
           <div class="col-xl-6 d-flex justify-items-center">
             <img
               src="images/self.JPG"
               width="1000px"
               class="about-me d-flex align-self-center justify-self-center"
-              id="me"
+              id="section1-img"
               alt="a smiling white person with curly lavendar hair, in the background is pink dogwood trees"
             />
           </div>
-          <div class="col-xl-6" id="about">
-            <p class="about-me mt-4 ps-4 pe-4">
+          <div class="col-xl-6" id="section1-div">
+            <p class="mt-4 ps-4 pe-4">
               I am a first-year graduate student and artist pursuing a Master's
               Degree in Computer Science at Portland State University. I am
               interested in multiple tracks including Languages and Programming,
@@ -73,7 +73,7 @@
               website. I have several other projects that are linked below. I am
               interested in projects made for queer people and people with
               disabilities, digital spaces that create culture and/or community
-              building, music design and synthesis, and the intersection of
+              building, music design and synthesis, and the intersections of
               nature, art, and technology.
             </p>
           </div>
@@ -83,19 +83,18 @@
             <img
               src="images/bugs.jpg"
               width="1000"
-              id="bugs"
-              class="projects d-flex align-self-center justify-self-center"
-              alt="framed science project of pinned winged bugs"
+              id="section2-img"
+              class="d-flex align-self-center justify-self-center"
+              alt="black and white framed science project of dead pinned winged insections"
             />
           </div>
-          <div class="col-xl-6 projects ps-4" id="project-text">
-            <h1>Projects</h1>
+          <div class="col-xl-6 ps-4" id="section2-div">
+            <h2>Projects</h2>
 
-            <ul id="project-list">
-              <li id="project-item1">
+            <ul>
+              <li>
                 <a
                   href="https://github.com/per-sephone/Herbal-Medicine-Dictionary"
-                  class="project-link"
                 >
                   Herbal Medicine Dictionary (C++)</a
                 >
@@ -107,10 +106,8 @@
                   </li>
                 </ul>
               </li>
-              <li id="project-item2">
-                <a
-                  href="https://github.com/per-sephone/Gradebook"
-                  class="project-link"
+              <li>
+                <a href="https://github.com/per-sephone/Gradebook"
                   >Gradebook (Python)</a
                 >
 
@@ -121,10 +118,8 @@
                   </li>
                 </ul>
               </li>
-              <li id="project-item3">
-                <a
-                  href="https://github.com/per-sephone/Reservation-tracker"
-                  class="project-link"
+              <li id="section2-item3">
+                <a href="https://github.com/per-sephone/Reservation-tracker"
                   >Reservation Tracker (C++)</a
                 >
 
@@ -136,7 +131,7 @@
                 </ul>
               </li>
             </ul>
-            <h1>Languages</h1>
+            <h2>Languages</h2>
             <ul>
               <li>C/C++</li>
               <li>Python</li>
@@ -146,24 +141,24 @@
           </div>
         </div>
         <div class="row section3" id="resume">
-          <div class="col-xl-6 d-flex justify-items-center" id="sky">
+          <div class="col-xl-6 d-flex justify-items-center">
             <img
               src="images/sky.jpg"
               width="1000"
-              class="resume d-flex align-self-center justify-self-center"
+              class="d-flex align-self-center justify-self-center"
               alt="reflection of the sky in the water, a person is mid-jump"
             />
           </div>
-          <div class="col-xl-6 pe-4" id="education">
-            <h1>Education</h1>
+          <div class="col-xl-6 pe-4" id="section3-div">
+            <h2>Education</h2>
             <ul>
-              <li id="list-item1">
+              <li>
                 Portland State University
                 <ul>
                   <li>Master of Science, Computer Science</li>
                 </ul>
               </li>
-              <li id="list-item2">
+              <li id="section3-item2">
                 Portland State University
                 <ul>
                   <li>Bachelor of Arts, Spanish Language</li>
@@ -171,7 +166,7 @@
                 </ul>
               </li>
             </ul>
-            <h1>CS Courses I Enjoyed</h1>
+            <h2>CS Courses I've Enjoyed</h2>
             <ul>
               <li>Cultural Competency in Computing</li>
               <li>Data Structures</li>
@@ -182,9 +177,9 @@
           </div>
         </div>
         <div id="spacer"></div>
-        <div class="row section4" id="contact">
+        <div class="row section4">
           <form>
-            <h1 id="contact-header">Contact Me</h1>
+            <h2 id="section4-header">Contact Me</h2>
             <div class="mb-3">
               <label for="name" class="form-label">Name:</label>
               <input
@@ -227,36 +222,45 @@
         </div>
         <div class="section5 row">
           <div class="col-xl-6">
-            <div class="find-me">Find Me On:</div>
+            <div class="section5-div">Find Me On:</div>
             <ul>
-              <li class="list">
+              <li class="section5-list">
                 <a
                   class="link"
-                  aria-label="LinkedIn link"
+                  aria-label="LinkedIn"
                   href="https://www.linkedin.com/in/nora-luna-16832a176"
                   ><i class="bi bi-linkedin"></i
                 ></a>
               </li>
-              <li class="list">
+              <li class="section5-list">
                 <a
                   class="link"
-                  aria-label="GitHub link"
+                  aria-label="GitHub"
                   href="https://github.com/per-sephone"
                   ><i class="bi bi-github"></i
                 ></a>
               </li>
-              <li class="list">
+              <li class="section5-list">
                 <a
                   class="link"
-                  aria-label="Flickr link"
+                  aria-label="Flickr"
                   href="https://www.flickr.com/photos/norayo"
                   ><i class="bi bi-camera-fill"></i
                 ></a>
               </li>
-              <li class="list">
+              <li class="section5-list">
                 <a
                   class="link"
-                  aria-label="xray.fm link"
+                  aria-label="Soundcloud"
+                  href="https://soundcloud.com/persephoneDJ"
+                >
+                  <i class="bi bi-headphones"></i>
+                </a>
+              </li>
+              <li class="section5-list">
+                <a
+                  class="link"
+                  aria-label="xray.fm"
                   href="https://xray.fm/shows/lucid-dream"
                   ><i class="bi bi-broadcast-pin"></i
                 ></a>
@@ -264,8 +268,8 @@
             </ul>
           </div>
 
-          <div class="light-theme col-xl-6">
-            <button class="btn-lg" id="light">Light Theme</button>
+          <div class="color-theme col-xl-6">
+            <button class="btn-lg" id="color">Light Theme</button>
           </div>
         </div>
       </div>
